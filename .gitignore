@@ -1,0 +1,120 @@
+# ================================================================
+# PALCOLIVRE — .gitignore
+# ================================================================
+# Regras organizadas por categoria. Adicione novas regras sempre
+# na seção correspondente para manter o arquivo legível.
+# ================================================================
+
+
+# ----------------------------------------------------------------
+# Variáveis de ambiente e credenciais
+# ----------------------------------------------------------------
+# Nunca publicar arquivos .env com senhas, tokens ou chaves reais.
+# Se precisar documentar quais variáveis existem, crie um arquivo
+# .env.example com valores fictícios — esse SIM pode ir ao Git.
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+.env.test
+.env.*.local
+
+# Arquivos de exemplo SEM credenciais são permitidos no Git:
+# !.env.example
+
+
+# ----------------------------------------------------------------
+# Dependências (Node.js — Etapa 3+)
+# ----------------------------------------------------------------
+# Arquivos de lock (package-lock.json, yarn.lock, pnpm-lock.yaml) NÃO são
+# ignorados: devem ser versionados para garantir builds reproduzíveis.
+node_modules/
+
+
+# ----------------------------------------------------------------
+# Logs
+# ----------------------------------------------------------------
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# ----------------------------------------------------------------
+# Arquivos temporários e gerados por ferramentas de desenvolvimento
+# ----------------------------------------------------------------
+# Chrome headless / Puppeteer
+dom.html
+
+# Arquivos de saída de inspeção e análise
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# Cache de ferramentas
+.cache/
+.parcel-cache/
+.turbo/
+
+
+# ----------------------------------------------------------------
+# Build e distribuição (quando houver pipeline de build)
+# ----------------------------------------------------------------
+dist/
+build/
+out/
+.output/
+
+
+# ----------------------------------------------------------------
+# Banco de dados local (Etapa 4+)
+# ----------------------------------------------------------------
+*.sqlite
+*.sqlite3
+*.db
+dump.sql
+*.sql.gz
+
+
+# ----------------------------------------------------------------
+# Editores de código
+# ----------------------------------------------------------------
+# VS Code — configurações pessoais (manter .vscode/extensions.json
+# se quiser sugerir extensões para colaboradores)
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json.example
+
+# JetBrains (WebStorm, IntelliJ)
+.idea/
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+
+
+# ----------------------------------------------------------------
+# Sistema operacional
+# ----------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory

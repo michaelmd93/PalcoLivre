@@ -1,0 +1,124 @@
+/* ============================================================
+   PALCOLIVRE — Design Tokens
+   ------------------------------------------------------------
+   Todas as cores, fontes e medidas do site estão centralizadas
+   aqui. Para mudar a identidade visual, edite somente este
+   arquivo. O nome da marca fica em js/config.js.
+   ============================================================ */
+
+:root {
+  /* ---- Marca ---- */
+  --gradiente-marca: linear-gradient(135deg, #c084fc 0%, #8b5cf6 45%, #6d28d9 100%);
+  --gradiente-marca-fraco: linear-gradient(135deg, rgba(192, 132, 252, .18), rgba(109, 40, 217, .18));
+
+  /* ---- Fundos (Palco Noturno — padrão) ---- */
+  --cor-fundo: #0b0812;
+  --cor-fundo-2: #110c1d;
+  --cor-superficie: #171128;
+  --cor-superficie-2: #1e1733;
+  --cor-borda: #2b2144;
+  --cor-borda-forte: #3d2f63;
+
+  /* ---- Cor de destaque ---- */
+  --cor-primaria: #8b5cf6;
+  --cor-primaria-hover: #a78bfa;
+  --cor-acento: #c084fc;
+  --cor-primaria-suave: rgba(139, 92, 246, .16);
+  --cor-primaria-borda: rgba(139, 92, 246, .45);
+
+  /* ---- Texto ---- */
+  --cor-texto: #f4f1fa;
+  --cor-texto-suave: #b9b1cd;
+  --cor-texto-mudo: #837a9c;
+
+  /* ---- Feedback ---- */
+  --cor-sucesso: #34d399;
+  --cor-perigo: #f87171;
+  --cor-alerta: #fbbf24;
+
+  /* ---- Tipografia ---- */
+  --fonte-display: "Sora", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --fonte-corpo: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  /* ---- Raios de borda ---- */
+  --raio-p: 8px;
+  --raio-m: 14px;
+  --raio-g: 22px;
+  --raio-pill: 999px;
+
+  /* ---- Sombras ---- */
+  --sombra-card: 0 12px 32px rgba(0, 0, 0, .38);
+  --sombra-elevada: 0 20px 50px rgba(0, 0, 0, .5);
+  --sombra-glow: 0 0 48px rgba(139, 92, 246, .30);
+
+  /* ---- Layout ---- */
+  --largura-container: 1160px;
+  --altura-header: 72px;
+
+  /* ---- Movimento ---- */
+  --transicao: .22s ease;
+
+  /* ---- Cores dependentes de tema (substituem valores hardcoded em styles.css) ---- */
+  --cor-topo-blur:    rgba(11, 8, 18, .72);
+  --cor-topo-solida:  rgba(11, 8, 18, .92);
+  --cor-menu-movel:   rgba(11, 8, 18, .97);
+  --cor-chip-hero:    rgba(23, 17, 40, .92);
+  --cor-fundo-modal:  rgba(8, 5, 14, .72);
+  --cor-esq-brilho:   #2a2145;
+  --glow-fundo-1:     rgba(139, 92, 246, .16);
+  --glow-fundo-2:     rgba(168, 85, 247, .10);
+
+  /* ---- Esquema de cor nativo (form controls, scrollbars) ---- */
+  color-scheme: dark;
+}
+
+/* ============================================================
+   PALCOLIVRE — Tema Palco Claro
+   ------------------------------------------------------------
+   Substitui apenas as variáveis de cor. Tipografia, espaçamentos
+   e lógica de layout permanecem idênticos ao tema escuro.
+   Ativado via:  <html data-tema="claro">
+   ============================================================ */
+
+[data-tema="claro"] {
+  /* ---- Gradiente de marca discreto em fundo claro ---- */
+  --gradiente-marca-fraco: linear-gradient(135deg, rgba(192, 132, 252, .11), rgba(109, 40, 217, .09));
+
+  /* ---- Fundos ---- */
+  --cor-fundo:        #f7f5ff;
+  --cor-fundo-2:      #ede9f8;
+  --cor-superficie:   #ffffff;
+  --cor-superficie-2: #f3effc;
+  --cor-borda:        #ddd8f2;
+  --cor-borda-forte:  #c4bce8;
+
+  /* ---- Roxo ligeiramente mais escuro — contraste adequado em fundo claro ---- */
+  --cor-primaria:        #7c3aed;
+  --cor-primaria-hover:  #6d28d9;
+  --cor-acento:          #9333ea;
+  --cor-primaria-suave:  rgba(124, 58, 237, .10);
+  --cor-primaria-borda:  rgba(124, 58, 237, .32);
+
+  /* ---- Texto ---- */
+  --cor-texto:       #1c1230;
+  --cor-texto-suave: #4c4075;
+  --cor-texto-mudo:  #6e6390;   /* reforçado: ~5.2:1 sobre #f7f5ff — passa WCAG AA */
+
+  /* ---- Sombras mais suaves em fundo claro ---- */
+  --sombra-card:    0 8px 28px rgba(0, 0, 0, .09);
+  --sombra-elevada: 0 18px 44px rgba(0, 0, 0, .13);
+  --sombra-glow:    0 0 40px rgba(124, 58, 237, .18);
+
+  /* ---- Cores dependentes de tema ---- */
+  --cor-topo-blur:   rgba(247, 245, 255, .82);
+  --cor-topo-solida: rgba(247, 245, 255, .97);
+  --cor-menu-movel:  rgba(247, 245, 255, .99);
+  --cor-chip-hero:   rgba(255, 255, 255, .95);
+  --cor-fundo-modal: rgba(100, 80, 180, .38);
+  --cor-esq-brilho:  #e8e2f8;
+  --glow-fundo-1:    rgba(139, 92, 246, .08);
+  --glow-fundo-2:    rgba(168, 85, 247, .05);
+
+  /* ---- Esquema de cor nativo ---- */
+  color-scheme: light;
+}

@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 600" role="img" aria-labelledby="titulo-hero">
+  <title id="titulo-hero">Palco iluminado por holofotes roxos com cantor, guitarrista e plateia em silhueta</title>
+  <defs>
+    <linearGradient id="fundo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#150e26"/>
+      <stop offset="1" stop-color="#0b0812"/>
+    </linearGradient>
+    <linearGradient id="feixeA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a855f7" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="feixeB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d946ef" stop-opacity=".65"/>
+      <stop offset="1" stop-color="#d946ef" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="feixeC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="brilho" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vinheta" cx=".5" cy=".45" r=".78">
+      <stop offset=".55" stop-color="#0b0812" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0b0812" stop-opacity=".6"/>
+    </radialGradient>
+    <linearGradient id="chao" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241a3f"/>
+      <stop offset="1" stop-color="#120d20"/>
+    </linearGradient>
+    <filter id="suave" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="760" height="600" fill="url(#fundo)"/>
+  <ellipse cx="380" cy="430" rx="350" ry="170" fill="url(#brilho)"/>
+
+  <!-- pontos de luz no fundo -->
+  <g fill="#c4b5fd" opacity=".5">
+    <circle cx="90" cy="140" r="2.4"/><circle cx="150" cy="210" r="1.8"/>
+    <circle cx="210" cy="110" r="2.2"/><circle cx="320" cy="150" r="1.6"/>
+    <circle cx="430" cy="120" r="2.2"/><circle cx="520" cy="190" r="1.8"/>
+    <circle cx="620" cy="130" r="2.4"/><circle cx="690" cy="220" r="1.8"/>
+    <circle cx="255" cy="190" r="1.4"/><circle cx="575" cy="95" r="1.6"/>
+  </g>
+
+  <!-- treliça superior -->
+  <rect x="60" y="30" width="640" height="4" rx="2" fill="#2e2350"/>
+  <rect x="60" y="52" width="640" height="10" rx="5" fill="#241a3d"/>
+  <g fill="#241a3d">
+    <rect x="95" y="32" width="6" height="22" rx="3"/>
+    <rect x="195" y="32" width="6" height="22" rx="3"/>
+    <rect x="295" y="32" width="6" height="22" rx="3"/>
+    <rect x="395" y="32" width="6" height="22" rx="3"/>
+    <rect x="495" y="32" width="6" height="22" rx="3"/>
+    <rect x="595" y="32" width="6" height="22" rx="3"/>
+  </g>
+
+  <!-- canhões de luz -->
+  <g fill="#1d1533" stroke="#3d2f63" stroke-width="1.5">
+    <rect x="110" y="58" width="28" height="34" rx="7" transform="rotate(10 124 75)"/>
+    <rect x="284" y="58" width="28" height="34" rx="7" transform="rotate(-5 298 75)"/>
+    <rect x="452" y="58" width="28" height="34" rx="7" transform="rotate(5 466 75)"/>
+    <rect x="618" y="58" width="28" height="34" rx="7" transform="rotate(-10 632 75)"/>
+  </g>
+  <g fill="#c084fc">
+    <circle cx="127" cy="94" r="5" opacity=".9"/>
+    <circle cx="297" cy="94" r="5" opacity=".8"/>
+    <circle cx="465" cy="94" r="5" opacity=".8"/>
+    <circle cx="629" cy="94" r="5" opacity=".9"/>
+  </g>
+
+  <!-- feixes de luz -->
+  <polygon points="127,96 30,470 255,470" fill="url(#feixeA)" opacity=".55"/>
+  <polygon points="297,96 195,470 405,470" fill="url(#feixeC)" opacity=".5"/>
+  <polygon points="465,96 355,470 575,470" fill="url(#feixeA)" opacity=".5"/>
+  <polygon points="629,96 505,470 730,470" fill="url(#feixeB)" opacity=".5"/>
+
+  <!-- equalizador ao fundo -->
+  <g fill="#8b5cf6">
+    <rect x="100" y="392" width="13" height="58" rx="6.5" opacity=".22"/>
+    <rect x="122" y="368" width="13" height="82" rx="6.5" opacity=".3"/>
+    <rect x="144" y="410" width="13" height="40" rx="6.5" opacity=".18"/>
+    <rect x="166" y="380" width="13" height="70" rx="6.5" opacity=".26"/>
+    <rect x="196" y="416" width="13" height="34" rx="6.5" opacity=".2"/>
+    <rect x="218" y="374" width="13" height="76" rx="6.5" opacity=".3"/>
+    <rect x="540" y="378" width="13" height="72" rx="6.5" opacity=".28"/>
+    <rect x="562" y="412" width="13" height="38" rx="6.5" opacity=".18"/>
+    <rect x="584" y="366" width="13" height="84" rx="6.5" opacity=".3"/>
+    <rect x="606" y="398" width="13" height="52" rx="6.5" opacity=".22"/>
+    <rect x="628" y="384" width="13" height="66" rx="6.5" opacity=".26"/>
+    <rect x="650" y="416" width="13" height="34" rx="6.5" opacity=".18"/>
+  </g>
+
+  <!-- plataforma do palco -->
+  <rect x="30" y="452" width="700" height="16" rx="8" fill="url(#chao)"/>
+  <rect x="30" y="452" width="700" height="5" rx="2.5" fill="#7c3aed" opacity=".85"/>
+  <ellipse cx="380" cy="482" rx="270" ry="16" fill="#8b5cf6" opacity=".22" filter="url(#suave)"/>
+
+  <!-- cantor (silhueta) -->
+  <g fill="#08050f">
+    <rect x="342" y="324" width="5" height="130" rx="2.5" transform="rotate(4 344 389)"/>
+    <rect x="312" y="316" width="36" height="5" rx="2.5" transform="rotate(-14 330 318)"/>
+    <circle cx="290" cy="286" r="17"/>
+    <path d="M268 452 L272 352 Q273 326 290 322 Q307 326 308 352 L312 452 L296 452 L292 384 L288 452 Z"/>
+    <path d="M302 342 L326 320 L332 326 L310 352 Z"/>
+  </g>
+  <ellipse cx="309" cy="312" rx="9" ry="7" transform="rotate(-14 309 312)" fill="#1d1433" stroke="#a78bfa" stroke-width="1.6"/>
+  <!-- luz de contorno do cantor -->
+  <path d="M296 322 Q307 326 308 352 L312 452 L305 452 L301 350 Q300 330 296 322 Z" fill="#8b5cf6" opacity=".38"/>
+  <circle cx="296" cy="280" r="17" fill="#8b5cf6" opacity=".3"/>
+
+  <!-- guitarrista (silhueta) -->
+  <g fill="#08050f">
+    <circle cx="505" cy="292" r="16"/>
+    <path d="M486 452 L490 356 Q491 330 505 326 Q519 330 520 356 L524 452 L510 452 L507 392 L503 452 Z"/>
+    <ellipse cx="497" cy="394" rx="30" ry="21" transform="rotate(18 497 394)"/>
+    <rect x="512" y="344" width="6" height="60" rx="3" transform="rotate(52 515 374)"/>
+    <circle cx="497" cy="394" r="6" fill="#171029"/>
+    <path d="M517 342 Q546 366 524 398 L515 392 Q535 368 508 350 Z"/>
+  </g>
+  <!-- luz de contorno do guitarrista -->
+  <path d="M511 326 Q519 330 520 356 L524 452 L517 452 L513 354 Q512 334 511 326 Z" fill="#d946ef" opacity=".3"/>
+  <ellipse cx="497" cy="394" rx="30" ry="21" transform="rotate(18 497 394)" fill="none" stroke="#d946ef" stroke-opacity=".35" stroke-width="1.6"/>
+
+  <!-- notas musicais flutuando -->
+  <g fill="#c084fc">
+    <g transform="translate(165 235)" opacity=".85">
+      <ellipse rx="6.5" ry="4.6" transform="rotate(-20)"/>
+      <rect x="5" y="-30" width="3" height="30" rx="1.5"/>
+      <path d="M8 -30 Q20 -26 18 -13 L15 -13 Q16 -22 8 -25 Z"/>
+    </g>
+    <g transform="translate(600 205) scale(.75)" opacity=".7">
+      <ellipse rx="6.5" ry="4.6" transform="rotate(-20)"/>
+      <rect x="5" y="-30" width="3" height="30" rx="1.5"/>
+      <path d="M8 -30 Q20 -26 18 -13 L15 -13 Q16 -22 8 -25 Z"/>
+    </g>
+    <g transform="translate(420 165) scale(.55)" opacity=".55">
+      <ellipse rx="6.5" ry="4.6" transform="rotate(-20)"/>
+      <rect x="5" y="-30" width="3" height="30" rx="1.5"/>
+    </g>
+  </g>
+
+  <!-- plateia -->
+  <g fill="#050309">
+    <path d="M0 600 L0 548 Q14 530 34 544 Q52 522 76 542 Q94 526 114 544 Q134 522 158 542 Q178 528 198 546 Q220 524 244 544 Q264 530 284 546 Q306 522 330 544 Q352 526 374 546 Q396 524 420 544 Q442 530 462 548 Q486 524 510 546 Q532 528 554 548 Q578 526 600 548 Q622 532 642 550 Q664 528 686 550 Q708 534 728 552 Q748 542 760 552 L760 600 Z"/>
+    <rect x="104" y="500" width="7" height="48" rx="3.5" transform="rotate(-18 107 524)"/>
+    <rect x="381" y="496" width="7" height="52" rx="3.5" transform="rotate(14 384 522)"/>
+    <rect x="640" y="502" width="7" height="46" rx="3.5" transform="rotate(-12 643 525)"/>
+    <rect x="468" y="484" width="15" height="26" rx="3" transform="rotate(9 475 497)" fill="#0d0a18" stroke="#a78bfa" stroke-width="1.4"/>
+    <rect x="471" y="488" width="9" height="14" rx="1.5" transform="rotate(9 475 497)" fill="#8b5cf6" opacity=".6"/>
+  </g>
+
+  <rect width="760" height="600" fill="url(#vinheta)"/>
+</svg>
